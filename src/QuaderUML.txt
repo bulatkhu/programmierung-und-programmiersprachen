@@ -1,0 +1,24 @@
++-----------------------------------------------------------------------+
+|     Quader                                                            |
++-----------------------------------------------------------------------+
+|- laenge: double                                                       |
+|- breite: double                                                       |
+|- hoehe: double                                                        |
+|- dichte: double                                                       |
++-----------------------------------------------------------------------+
+|+ Quader(laenge: double, breite: double, hoehe: double, dichte: double)|
+|+ Quader(laenge: double, breite: double, hoehe: double)                |
+|+ Quader(laenge: double)                                               |
+|+ berechneVolumen(): double                                            |
+|+ berechneOberflaeche(): double                                        |
+|+ berechneGewicht(): double                                            |
+|+ printInfo(): void                                                    |
+|+ getLaenge(): double                                                  |
+|+ setLaenge(laenge: double): void                                      |
+|+ getBreite(): double                                                  |
+|+ setBreite(breite: double): void                                      |
+|+ getHoehe(): double                                                   |
+|+ setHoehe(hoehe: double): void                                        |
+|+ getDichte(): double                                                  |
+|+ setDichte(dichte: double): void                                      |
++-----------------------------------------------------------------------+

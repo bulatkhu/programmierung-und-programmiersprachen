@@ -4,13 +4,6 @@ public class Quader {
     private double hoehe;
     private double dichte;
 
-    public Quader() {
-        this.laenge = 0;
-        this.breite = 0;
-        this.hoehe = 0;
-        this.dichte = 0;
-    }
-
     public Quader(double laenge, double breite, double hoehe, double dichte) {
         this.laenge = laenge;
         this.breite = breite;
@@ -74,3 +67,29 @@ public class Quader {
         this.dichte = dichte;
     }
 }
+
+
+//+----------------+
+//|     Quader     |
+//+----------------+
+//|- laenge: double|
+//|- breite: double|
+//|- hoehe: double |
+//|- dichte: double|
+//+----------------+
+//|+ Quader(l: double, b: double, h: double)          |
+//|+ Quader(l: double, b: double, h: double, d: double)|
+//|+ Quader(kantenlaenge: double)                     |
+//|+ getLaenge(): double                              |
+//|+ setLaenge(laenge: double): void                  |
+//|+ getBreite(): double                              |
+//|+ setBreite(breite: double): void                  |
+//|+ getHoehe(): double                               |
+//|+ setHoehe(hoehe: double): void                    |
+//|+ getDichte(): double                              |
+//|+ setDichte(dichte: double): void                  |
+//|+ berechneVolumen(): double                        |
+//|+ berechneOberflaeche(): double                    |
+//|+ berechneGewicht(): double                        |
+//+----------------+
+
