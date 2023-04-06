@@ -18,6 +18,14 @@ public class Quader {
         this.dichte = dichte;
     }
 
+    public Quader(double laenge, double breite, double hoehe) {
+        this(laenge, breite, hoehe, 0.5);
+    }
+
+    public Quader(double laenge) {
+        this(laenge, laenge, laenge, 1);
+    }
+
     public double berechneVolumen() {
         return laenge * breite * hoehe;
     }
