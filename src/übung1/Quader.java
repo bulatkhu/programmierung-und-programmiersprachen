@@ -1,3 +1,5 @@
+package übung1;
+
 public class Quader {
     private double laenge;
     private double breite;
@@ -69,27 +71,27 @@ public class Quader {
 }
 
 
-//+----------------+
-//|     Quader     |
-//+----------------+
-//|- laenge: double|
-//|- breite: double|
-//|- hoehe: double |
-//|- dichte: double|
-//+----------------+
-//|+ Quader(l: double, b: double, h: double)          |
+//+----------------------------------------------------+
+//|                      Quader                        |
+//+----------------------------------------------------+
+//|- laenge: double                                    |
+//|- breite: double                                    |
+//|- hoehe: double                                     |
+//|- dichte: double                                    |
+//+----------------------------------------------------+
+//|+ Quader(l: double, b: double, h: double)           |
 //|+ Quader(l: double, b: double, h: double, d: double)|
-//|+ Quader(kantenlaenge: double)                     |
-//|+ getLaenge(): double                              |
-//|+ setLaenge(laenge: double): void                  |
-//|+ getBreite(): double                              |
-//|+ setBreite(breite: double): void                  |
-//|+ getHoehe(): double                               |
-//|+ setHoehe(hoehe: double): void                    |
-//|+ getDichte(): double                              |
-//|+ setDichte(dichte: double): void                  |
-//|+ berechneVolumen(): double                        |
-//|+ berechneOberflaeche(): double                    |
-//|+ berechneGewicht(): double                        |
-//+----------------+
+//|+ Quader(kantenlaenge: double)                      |
+//|+ getLaenge(): double                               |
+//|+ setLaenge(laenge: double): void                   |
+//|+ getBreite(): double                               |
+//|+ setBreite(breite: double): void                   |
+//|+ getHoehe(): double                                |
+//|+ setHoehe(hoehe: double): void                     |
+//|+ getDichte(): double                               |
+//|+ setDichte(dichte: double): void                   |
+//|+ berechneVolumen(): double                         |
+//|+ berechneOberflaeche(): double                     |
+//|+ berechneGewicht(): double                         |
+//+----------------------------------------------------+
 

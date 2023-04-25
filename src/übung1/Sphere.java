@@ -1,3 +1,5 @@
+package übung1;
+
 public class Sphere {
     private double l, w, h;
 

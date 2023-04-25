@@ -1,3 +1,5 @@
+package übung1;
+
 public class QuaderTest {
     public static void main(String[] args) {
         double dichte = 0.5;
