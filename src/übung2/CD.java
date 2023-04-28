@@ -1,27 +1,13 @@
 package übung2;
 
-
-public class CD {
-    String titel;
-    double preis;
-    long barcode;
+public class CD extends Artikel {
     int laufzeit;
     String komponist;
 
     public CD(String titel, double preis, long barcode, int laufzeit, String komponist) {
-        this.titel = titel;
-        this.preis = preis;
-        this.barcode = barcode;
+        super(titel, preis, barcode);
         this.laufzeit = laufzeit;
         this.komponist = komponist;
-    }
-
-    public long getBarcode() {
-        return barcode;
-    }
-
-    public double getPreis() {
-        return preis;
     }
 
     public String getBeschreibung() {

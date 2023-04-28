@@ -13,8 +13,8 @@ public class WebshopTest {
                 139, "Dan Pilone", 2);
 
         String MostExpenciveBookDescription = b1.getPreis() < b2.getPreis()
-            ? b2.getBeschreibung()
-            : b1.getBeschreibung();
+                ? b2.getBeschreibung()
+                : b1.getBeschreibung();
 
         System.out.printf("The more expensive book is: %s%n", MostExpenciveBookDescription);
 
@@ -22,5 +22,11 @@ public class WebshopTest {
                 231, "Komponist");
 
         System.out.println(cd1.getBeschreibung());
+
+        Artikel[] liste = new Artikel[]{b1, b2, cd1};
+        for (Artikel buch : liste) {
+            System.out.println(buch.getBarcode() + "\t" +
+                    buch.getBeschreibung());
+        }
     }
 }
