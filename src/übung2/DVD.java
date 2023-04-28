@@ -1,6 +1,6 @@
 package übung2;
 
-public class DVD extends Artikel implements Abspielbar  {
+public class DVD extends Artikel implements Umtauschbar, Abspielbar  {
     String regisseur;
     int erscheinungsjahr;
     int abspieldauer;

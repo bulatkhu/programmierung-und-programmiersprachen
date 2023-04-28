@@ -1,6 +1,6 @@
 package übung2;
 
-public class CD extends Artikel implements Abspielbar {
+public class CD extends Artikel implements Umtauschbar, Abspielbar  {
     int laufzeit;
     String komponist;
     int abspieldauer;

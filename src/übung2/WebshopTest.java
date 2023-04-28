@@ -27,9 +27,9 @@ public class WebshopTest {
         DVD dvd2 = new DVD("Star Wars: Episode IV - A New Hope", 12.99, 9780790731523L, "George Lucas", 1977, 32);
         DVD dvd3 = new DVD("The Lord of the Rings: The Fellowship of the Ring", 19.99, 794043547121L, "Peter Jackson", 2001, 32);
 
-        Bluray bluray1 = new Bluray("Interstellar", 24.99, 5051892198894L, "Christopher Nolan", 2014);
-        Bluray bluray2 = new Bluray("The Dark Knight", 19.99, 883929096048L, "Christopher Nolan", 2008);
-        Bluray bluray3 = new Bluray("Inception", 17.99, 5051892028709L, "Christopher Nolan", 2010);
+        Bluray bluray1 = new Bluray("Interstellar", 24.99, 5051892198894L, "Christopher Nolan", 2014, 21);
+        Bluray bluray2 = new Bluray("The Dark Knight", 19.99, 883929096048L, "Christopher Nolan", 2008, 21);
+        Bluray bluray3 = new Bluray("Inception", 17.99, 5051892028709L, "Christopher Nolan", 2010, 21);
 
         Artikel[] liste = new Artikel[]{b1, b2, cd1, dvd1, dvd2, dvd3, bluray1, bluray2, bluray3, cd2, cd3, cd4};
 
