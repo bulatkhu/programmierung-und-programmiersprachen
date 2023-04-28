@@ -2,18 +2,30 @@ package übung4;
 
 public class Initial {
     public static void main(String[] args) {
-        Person person1 = new Person("Bulat", 1);
-        Person person2 = new Person("Alex", 2);
-        Person person3 = new Person("Phill", 3);
-        Person person4 = new Person("Grem", 4);
+        BinaryTree<Person> tree = new BinaryTree<>();
 
-        var tree = new BinaryTree<Person>();
+        // Create some Person objects
+        Person alice = new Person("Alice", 102);
+        Person bob = new Person("Bob", 57);
+        Person chris = new Person("Chris", 451);
+        Person diane = new Person("Diane", 13);
+        Person esther = new Person("Esther", 78);
+        Person fritz = new Person("Fritz", 255);
+        Person gianni = new Person("Gianni", 900);
+        Person irene = new Person("Irene", 377);
+        Person hannah = new Person("Hannah", 66);
 
-        tree.add(person1);
-        tree.add(person2);
-        tree.add(person3);
-        tree.add(person4);
+        // Add the Person objects to the binary tree
+        tree.add(alice);
+        tree.add(bob);
+        tree.add(chris);
+        tree.add(diane);
+        tree.add(esther);
+        tree.add(fritz);
+        tree.add(gianni);
+        tree.add(irene);
+        tree.add(hannah);
 
-        System.out.print(tree);
+        tree.printTree();
     }
 }

@@ -1,6 +1,6 @@
 package übung4;
 
-public class Person implements Comparable<Person> {
+public class Person implements Printable<Person> {
     private String name;
     private int id;
 
@@ -27,5 +27,10 @@ public class Person implements Comparable<Person> {
 
     public int compareTo(Person compareable) {
         return Integer.compare(this.id, compareable.getId());
+    }
+
+    @Override
+    public String print() {
+        return "id: " + this.id + " name: " + this.name;
     }
 }

@@ -1,10 +1,10 @@
 package übung4;
 
-public class BinaryTree<T extends Comparable<T>> {
-    private Node<T> node;
+public class BinaryTree<T extends Printable<T>> {
+    private Node<T> root;
 
     public void add(T value) {
-        this.add(node, value);
+        root = this.add(root, value);
     }
 
     public Node<T> add(Node<T> node, T value) {
@@ -19,7 +19,7 @@ public class BinaryTree<T extends Comparable<T>> {
     }
 
     public T find(T value) {
-        Node<T> node = find(this.node, value);
+        Node<T> node = find(root, value);
         if (node == null) {
             return null;
         }
@@ -41,13 +41,26 @@ public class BinaryTree<T extends Comparable<T>> {
     }
 
     private static class Node<T> {
-        private T root;
+        private final T root;
         private Node<T> left;
         private Node<T> right;
 
         public Node(T value) {
             this.root = value;
         }
+    }
+
+    public void printTree() {
+        printTree(root, "");
+    }
+
+    private void printTree(Node<T> node, String prefix) {
+        if (node == null) {
+            return;
+        }
+        System.out.println(prefix + node.root.print());
+        printTree(node.left, prefix + "-");
+        printTree(node.right, prefix + "-");
     }
 }
 
