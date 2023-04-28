@@ -18,14 +18,14 @@ public class WebshopTest {
 
         System.out.printf("The more expensive book is: %s%n", MostExpenciveBookDescription);
 
-        CD cd1 = new CD("UML 3.0", 21, 9783197215214L, 231, "Komponist");
-        CD cd2 = new CD("Thriller", 14.99, 731453190625L, 42, "Michael Jackson");
-        CD cd3 = new CD("Nevermind", 12.99, 720642442523L, 50, "Nirvana");
-        CD cd4 = new CD("The Joshua Tree", 11.99, 602517229374L, 50, "U2");
+        CD cd1 = new CD("UML 3.0", 21, 9783197215214L, 231, "Komponist", 201);
+        CD cd2 = new CD("Thriller", 14.99, 731453190625L, 42, "Michael Jackson", 201);
+        CD cd3 = new CD("Nevermind", 12.99, 720642442523L, 50, "Nirvana", 201);
+        CD cd4 = new CD("The Joshua Tree", 11.99, 602517229374L, 50, "U2", 201);
 
-        DVD dvd1 = new DVD("The Godfather", 15.99, 9780800120L, "Francis Ford Coppola", 1972);
-        DVD dvd2 = new DVD("Star Wars: Episode IV - A New Hope", 12.99, 9780790731523L, "George Lucas", 1977);
-        DVD dvd3 = new DVD("The Lord of the Rings: The Fellowship of the Ring", 19.99, 794043547121L, "Peter Jackson", 2001);
+        DVD dvd1 = new DVD("The Godfather", 15.99, 9780800120L, "Francis Ford Coppola", 1972, 32);
+        DVD dvd2 = new DVD("Star Wars: Episode IV - A New Hope", 12.99, 9780790731523L, "George Lucas", 1977, 32);
+        DVD dvd3 = new DVD("The Lord of the Rings: The Fellowship of the Ring", 19.99, 794043547121L, "Peter Jackson", 2001, 32);
 
         Bluray bluray1 = new Bluray("Interstellar", 24.99, 5051892198894L, "Christopher Nolan", 2014);
         Bluray bluray2 = new Bluray("The Dark Knight", 19.99, 883929096048L, "Christopher Nolan", 2008);
