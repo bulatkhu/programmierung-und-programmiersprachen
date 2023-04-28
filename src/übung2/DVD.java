@@ -1,6 +1,6 @@
 package übung2;
 
-public class DVD extends Artikel {
+public class DVD extends Artikel implements Umtauschbar {
     String regisseur;
     int erscheinungsjahr;
 
@@ -18,5 +18,9 @@ public class DVD extends Artikel {
                 "DVD[Titel: %s, Preis: %s, Barcode: %s, Regisseur: %s, Erscheinungsjahr: %s]",
                 titel, preis, barcode, regisseur, erscheinungsjahr
         );
+    }
+
+    public int umtauschfrist() {
+        return 14;
     }
 }

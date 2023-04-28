@@ -1,6 +1,6 @@
 package übung2;
 
-public class CD extends Artikel {
+public class CD extends Artikel implements Umtauschbar {
     int laufzeit;
     String komponist;
 
@@ -15,5 +15,9 @@ public class CD extends Artikel {
             "CD[Titel: %s, Preis: %s, Barcode: %s, Laufzeit: %s, Komponist: %s]",
             titel, preis, barcode, laufzeit, komponist
         );
+    }
+
+    public int umtauschfrist() {
+        return 14;
     }
 }

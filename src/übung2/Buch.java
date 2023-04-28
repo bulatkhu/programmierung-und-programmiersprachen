@@ -1,6 +1,6 @@
 package übung2;
 
-public class Buch extends Artikel {
+public class Buch extends Artikel implements Umtauschbar {
     int seiten;
     String author;
     int auflage;
@@ -29,5 +29,9 @@ public class Buch extends Artikel {
 
     public int getAuflage() {
         return auflage;
+    }
+
+    public int umtauschfrist() {
+        return 30;
     }
 }

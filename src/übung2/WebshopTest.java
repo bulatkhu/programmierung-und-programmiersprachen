@@ -18,7 +18,7 @@ public class WebshopTest {
 
         System.out.printf("The more expensive book is: %s%n", MostExpenciveBookDescription);
 
-        CD cd1 = new CD("UML 3.0", 21, 9783197215214L,231, "Komponist");
+        CD cd1 = new CD("UML 3.0", 21, 9783197215214L, 231, "Komponist");
         CD cd2 = new CD("Thriller", 14.99, 731453190625L, 42, "Michael Jackson");
         CD cd3 = new CD("Nevermind", 12.99, 720642442523L, 50, "Nirvana");
         CD cd4 = new CD("The Joshua Tree", 11.99, 602517229374L, 50, "U2");
@@ -44,6 +44,9 @@ public class WebshopTest {
             }
             if (artikel instanceof DVD & !(artikel instanceof Bluray)) {
                 priceSumDVD += artikel.getPreis();
+            }
+            if (artikel instanceof Umtauschbar) {
+                System.out.println("Umtauschfrist fuer \"" + artikel.getBeschreibung() + "\": " + ((Umtauschbar) artikel).umtauschfrist() + " Tage");
             }
         }
 
