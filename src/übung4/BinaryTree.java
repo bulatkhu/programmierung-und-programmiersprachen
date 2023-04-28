@@ -1,7 +1,7 @@
 package übung4;
 
 public class BinaryTree<T extends Printable<T>> {
-    private Node<T> root;
+    public Node<T> root;
 
     public void add(T value) {
         root = this.add(root, value);
@@ -38,29 +38,6 @@ public class BinaryTree<T extends Printable<T>> {
             return find(node.left, value);
         }
         return find(node.right, value);
-    }
-
-    private static class Node<T> {
-        private final T root;
-        private Node<T> left;
-        private Node<T> right;
-
-        public Node(T value) {
-            this.root = value;
-        }
-    }
-
-    public void printTree() {
-        printTree(root, "");
-    }
-
-    private void printTree(Node<T> node, String prefix) {
-        if (node == null) {
-            return;
-        }
-        System.out.println(prefix + node.root.print());
-        printTree(node.left, prefix + "-");
-        printTree(node.right, prefix + "-");
     }
 }
 

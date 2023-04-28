@@ -26,6 +26,6 @@ public class Initial {
         tree.add(irene);
         tree.add(hannah);
 
-        tree.printTree();
+        BTreePrinter.printNode(tree.root);
     }
 }

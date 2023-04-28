@@ -31,6 +31,6 @@ public class Person implements Printable<Person> {
 
     @Override
     public String print() {
-        return "id: " + this.id + " name: " + this.name;
+        return String.valueOf(this.id);
     }
 }
