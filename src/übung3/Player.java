@@ -33,18 +33,18 @@ public class Player {
 
     public static void main(String[] args) {
         Album wywh = new Album("Wish You Were Here", "Pink Floyd");
-        wywh.tracks.add(new Track("Shine On You Crazy Diamond, Pts. 1-5", "Pink Floyd", "Wish You Were Here", 13*60+30));
-        wywh.tracks.add(new Track("Welcome To The Machine", "Pink Floyd", "Wish You Were Here", 7*60+33));
-        wywh.tracks.add(new Track("Have A Cigar", "Pink Floyd", "Wish You Were Here", 5*60+7));
-        wywh.tracks.add(new Track("Wish You Were Here", "Pink Floyd", "Wish You Were Here", 5*60+5));
-        wywh.tracks.add(new Track("Shine On You Crazy Diamond, Pts. 6-9", "Pink Floyd", "Wish You Were Here", 12*60+23));
+        wywh.tracks.add(new Track("Shine On You Crazy Diamond, Pts. 1-5", wywh, 13*60+30));
+        wywh.tracks.add(new Track("Welcome To The Machine", wywh, 7*60+33));
+        wywh.tracks.add(new Track("Have A Cigar", wywh, 5*60+7));
+        wywh.tracks.add(new Track("Wish You Were Here", wywh, 5*60+5));
+        wywh.tracks.add(new Track("Shine On You Crazy Diamond, Pts. 6-9", wywh, 12*60+23));
         wywh.updateLength();
 
         Album lysf = new Album("Lift Your Skinny Fists Like Antennas to Heaven", "Godspeed You! Black Emperor");
-        lysf.tracks.add(new Track("Storm", "Godspeed You! Black Emperor", "Wish You Were Here", 22*60+32));
-        lysf.tracks.add(new Track("Static", "Godspeed You! Black Emperor", "Wish You Were Here", 22*60+35));
-        lysf.tracks.add(new Track("Sleep", "Godspeed You! Black Emperor", "Wish You Were Here", 23*60+17));
-        lysf.tracks.add(new Track("Like Antennas To Heaven...", "Godspeed You! Black Emperor", "Wish You Were Here", 18*60+57));
+        lysf.tracks.add(new Track("Storm", lysf, 22*60+32));
+        lysf.tracks.add(new Track("Static", lysf, 22*60+35));
+        lysf.tracks.add(new Track("Sleep", lysf, 23*60+17));
+        lysf.tracks.add(new Track("Like Antennas To Heaven...", lysf, 18*60+57));
         lysf.updateLength();
 
         Player player = new Player();

@@ -4,14 +4,12 @@ import java.util.ArrayList;
 
 public class Track {
     public String trackTitle;  // album title
-    public String artist;  // track artist
-    public String album;  // track album
+    public Album album;  // track album
     public int length;  // length of the track in seconds
 
 
-    public Track(String trackTitle, String artist, String album, int length) {
+    public Track(String trackTitle, Album album, int length) {
         this.trackTitle = trackTitle;
-        this.artist = artist;
         this.album = album;
         this.length = length;
     }
@@ -21,7 +19,7 @@ public class Track {
     }
 
     public String getDescription() {
-        return artist + " - " + trackTitle + " (" + getRuntimeString(length) + ")";
+        return this.album.artist + " - " + trackTitle + " (" + getRuntimeString(length) + ")";
     }
 
     /**
