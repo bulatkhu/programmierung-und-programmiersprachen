@@ -1,7 +1,7 @@
 package übung3;
 
 public class Artist {
-    String artistName;
+    private final String artistName;
 
     public Artist(String name) {
          this.artistName = name;

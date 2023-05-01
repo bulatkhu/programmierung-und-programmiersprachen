@@ -3,12 +3,13 @@ package übung3;
 public class Track implements Playable {
     private final String trackTitle;  // album title
     private final Album album;  // track album
+    private final Artist artist;
     private int length;  // length of the track in seconds
 
-
-    public Track(String trackTitle, Album album, int length) {
+    public Track(String trackTitle, Artist artist, Album album, int length) {
         this.trackTitle = trackTitle;
         this.album = album;
+        this.artist = artist;
         this.length = length;
     }
 
@@ -21,6 +22,6 @@ public class Track implements Playable {
     }
 
     public String getDescription() {
-        return this.album.getArtist() + " - " + trackTitle + " (" + Playable.getRuntimeString(length) + ")";
+        return this.artist.getArtistName() + " - " + trackTitle + " (" + Playable.getRuntimeString(length) + ")";
     }
 }
