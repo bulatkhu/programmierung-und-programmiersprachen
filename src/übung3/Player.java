@@ -32,7 +32,10 @@ public class Player {
     }
 
     public static void main(String[] args) {
-        Album wywh = new Album("Wish You Were Here", "Pink Floyd");
+        Artist artist1 = new Artist("Pink Floyd");
+        Artist artist2 = new Artist("Godspeed You! Black Emperor");
+
+        Album wywh = new Album("Wish You Were Here", artist1);
         wywh.addTrack(new Track("Shine On You Crazy Diamond, Pts. 1-5", wywh, 13*60+30));
         wywh.addTrack(new Track("Welcome To The Machine", wywh, 7*60+33));
         wywh.addTrack(new Track("Have A Cigar", wywh, 5*60+7));
@@ -40,7 +43,7 @@ public class Player {
         wywh.addTrack(new Track("Shine On You Crazy Diamond, Pts. 6-9", wywh, 12*60+23));
         wywh.updateLength();
 
-        Album lysf = new Album("Lift Your Skinny Fists Like Antennas to Heaven", "Godspeed You! Black Emperor");
+        Album lysf = new Album("Lift Your Skinny Fists Like Antennas to Heaven", artist2);
         lysf.addTrack(new Track("Storm", lysf, 22*60+32));
         lysf.addTrack(new Track("Static", lysf, 22*60+35));
         lysf.addTrack(new Track("Sleep", lysf, 23*60+17));

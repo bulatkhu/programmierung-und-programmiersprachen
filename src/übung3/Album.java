@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Album implements Playable {
     private final String albumTitle;  // album title
-    private final String artist;  // artist name
+    private final Artist artist;  // artist name
     private final ArrayList<Track> tracks = new ArrayList<>();  // tracks
     private int length;  // length of the album in seconds
 
-    public Album(String albumTitle, String artist) {
+    public Album(String albumTitle, Artist artist) {
         this.albumTitle = albumTitle;
         this.artist = artist;
     }
@@ -22,7 +22,7 @@ public class Album implements Playable {
     }
 
     public String getArtist() {
-        return artist;
+        return artist.getArtistName();
     }
 
     public void addTrack(Track track) {
