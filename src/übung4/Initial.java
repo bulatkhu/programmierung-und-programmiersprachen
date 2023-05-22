@@ -26,6 +26,10 @@ public class Initial {
         tree.add(irene);
         tree.add(hannah);
 
+        Person value = tree.find(alice);
+
+        value.printPerson();
+
         BTreePrinter.printNode(tree.root);
     }
 }

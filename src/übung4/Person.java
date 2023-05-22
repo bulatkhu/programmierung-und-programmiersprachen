@@ -1,8 +1,16 @@
 package übung4;
 
+import java.util.Random;
+
 public class Person implements Printable<Person> {
     private String name;
     private int id;
+
+    public static int MAX_RANDOM_ID = 10000;
+
+    public Person(String name) {
+        this(name, new Random().nextInt(MAX_RANDOM_ID));
+    }
 
     public Person(String name, int id) {
         this.setId(id);
@@ -32,5 +40,9 @@ public class Person implements Printable<Person> {
     @Override
     public String print() {
         return String.valueOf(this.id);
+    }
+
+    public void printPerson() {
+        System.out.printf("Name: %s Id: %d\n", this.getName(), this.getId());
     }
 }
