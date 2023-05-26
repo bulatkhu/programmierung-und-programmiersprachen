@@ -2,7 +2,7 @@ package übung5_additional;
 
 import java.util.Arrays;
 
-public class DFSTest {
+public class SearchAlgorithmsTest {
     public static void main(String[] args) {
         var v0 = new Vertex<>(0);
         var v1 = new Vertex<>(1);
@@ -19,5 +19,8 @@ public class DFSTest {
 
         var dfs = new DepthFirstSearch<Integer>();
         dfs.traverse(v0);
+        System.out.println("----------------------------------");
+        var bfs = new BreadthFirstSearch<Integer>();
+        bfs.traverse(v0);
     }
 }

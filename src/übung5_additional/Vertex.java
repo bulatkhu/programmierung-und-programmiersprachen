@@ -17,6 +17,10 @@ public class Vertex<T> {
         this.data = data;
     }
 
+    public T getData() {
+        return data;
+    }
+
     public boolean isVisited() {
         return visited;
     }
