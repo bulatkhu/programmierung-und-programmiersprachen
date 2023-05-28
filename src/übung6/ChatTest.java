@@ -13,8 +13,8 @@ public class ChatTest {
         chat.registriereBeobachter(logger1);
 
         var nachricht1 = new Nachricht("Nachrict 1", "sender 1", "anzeige1");
-        var nachricht2 = new Nachricht("Nachrict 1", "sender 1", "anzeige2");
-        var nachricht3 = new Nachricht("Nachrict 1", "sender 1", "logger1");
+        var nachricht2 = new Nachricht("Nachrict 2", "sender 2", "anzeige2");
+        var nachricht3 = new Nachricht("Nachrict 3", "sender 3", "logger1");
         chat.benachrichtigeBeobachter(nachricht1);
         chat.benachrichtigeBeobachter(nachricht2);
         chat.benachrichtigeBeobachter(nachricht3);
