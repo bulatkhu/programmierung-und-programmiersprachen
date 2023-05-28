@@ -6,7 +6,7 @@ public class LogWriter implements IChatBeobachter {
     @Override
     public void aktualisieren(Nachricht nachricht) {
         try {
-            FileWriter fileWriter = new FileWriter("logs_" + nachricht.getEmpfaenger() + ".txt");
+            FileWriter fileWriter = new FileWriter("logs_" + nachricht.getEmpfaenger() + ".txt", true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.println(nachricht);
             printWriter.close();
