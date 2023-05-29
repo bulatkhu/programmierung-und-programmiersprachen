@@ -34,7 +34,7 @@ public class Playlist implements Playable {
 
     /**
      * Updates the length of the album by calculating the sum of track lengths
-     * Developer Note: Call this after adding tracks!
+     * Developer Note: Call this übung7_example.example.after adding tracks!
      */
     private void updateLength() {
         this.length = 0;

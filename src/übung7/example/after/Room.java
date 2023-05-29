@@ -1,4 +1,4 @@
-package übung7_example1;
+package übung7.example.after;
 
 public class Room {
     Command command;

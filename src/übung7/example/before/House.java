@@ -1,4 +1,4 @@
-package übung7_example;
+package übung7.example.before;
 
 import java.util.ArrayList;
 import java.util.List;
