@@ -1,13 +1,16 @@
 package übung7_example1;
 
 public class Room {
-    private final Light light;
+    Command command;
 
     public Room() {
-        this.light = new Light();
     }
 
-    public void switchLights() {
-        light.setSwitchedOn(!light.isSwitchedOn());
+    public void setCommand(Command command) {
+        this.command = command;
+    }
+
+    public void executeCommand() {
+        command.execute();
     }
 }

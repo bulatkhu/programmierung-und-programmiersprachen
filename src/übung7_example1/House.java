@@ -15,12 +15,8 @@ public class House {
     }
 
     public static void main(String[] args) {
-        House house = new House();
-        house.addRoom(new LivingRoom());
-        house.addRoom(new Bathroom());
-        house.addRoom(new Kitchen());
-        house.addRoom(new Bedroom());
-        house.addRoom(new Bedroom());
-        house.rooms.forEach(Room::switchLights);
+        Room livingRoom = new LivingRoom();
+        livingRoom.setCommand(new SwitchLightsCommand(new Light()));
+        livingRoom.executeCommand();
     }
 }
