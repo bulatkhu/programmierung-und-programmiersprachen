@@ -1,4 +1,4 @@
-package übung7.example3;
+package übung7.CommandStack;
 
 public interface EditorCommand {
     void execute();

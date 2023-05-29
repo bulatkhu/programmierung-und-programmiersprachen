@@ -1,4 +1,4 @@
-package übung7.example3;
+package übung7.CommandStack;
 
 import java.util.Stack;
 
