@@ -3,7 +3,7 @@ package übung8_examples;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProxyMuster {
+public class ProxyInternetTest {
     public static void main(String[] args) {
         Internet internet = new ProxyInternet(new RealInternet());
         internet.connectTo("banned.com");
