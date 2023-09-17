@@ -7,10 +7,11 @@ public class FactoryMuster {
 
         var GERTrikotFactory = new GERTrikotFactory();
         var GERTrikot = GERTrikotFactory.erstelleTrikot("KLOSE", 11);
+        var GETShorts = GERTrikotFactory.erstelleShorts();
 
         PORTrikot.drucke();
-
         GERTrikot.drucke();
+        GETShorts.drucke();
     }
 }
 
