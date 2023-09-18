@@ -33,7 +33,7 @@ class Directory implements FileSystemComponent {
     }
 
     public void print() {
-        System.out.println("Directory: " + name);
+        System.out.println("Directory: " + name + " | " + getSize() + "mb");
         for (FileSystemComponent fileSystem: fileSystemComponents) {
             fileSystem.print();
         }
